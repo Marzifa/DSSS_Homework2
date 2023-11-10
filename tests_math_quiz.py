@@ -29,7 +29,6 @@ class TestMathGame(unittest.TestCase):
             problem, answer = function_final(num1, num2, operator)
             print(problem,answer)
             self.assertEqual(problem, expected_problem)
-            print(problem,answer)
             self.assertEqual(answer, expected_answer)
 
 
