@@ -3,6 +3,7 @@ import unittest
 
 if __name__ == "__main__":
     unittest.main()
+    print("hi ")
 
 # Random Number will be chosen by random library
 def function_random_number(min, max):
