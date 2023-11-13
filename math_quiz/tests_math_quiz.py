@@ -3,7 +3,6 @@ from math_quiz import function_random_number, function_random_operators, functio
 
 
 class TestMathGame(unittest.TestCase):
-
     def test_function_random_number(self):
         # Test if random numbers generated are within the specified range
         min_val = 1
@@ -24,10 +23,9 @@ class TestMathGame(unittest.TestCase):
             (10, 3, '-', '10 - 3', 7),
             (4, 6, '*', '4 * 6', 24),
         ]
-
         for num1, num2, operator, expected_problem, expected_answer in test_cases:
             problem, answer = function_final(num1, num2, operator)
-            print(problem,answer)
+            print(problem, answer)
             self.assertEqual(problem, expected_problem)
             self.assertEqual(answer, expected_answer)
 

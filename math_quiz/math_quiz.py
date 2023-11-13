@@ -4,12 +4,13 @@ import unittest
 if __name__ == "__main__":
     unittest.main()
 
+
 # Random Number will be chosen by random library
 def function_random_number(min, max):
     """
     Random integer.
     """
-    print("random", random.randint(min, max))
+    # print("random", random.randint(min, max))
     return random.randint(min, max)
 
 
@@ -37,7 +38,7 @@ def math_quiz():
 
     print("Welcome to the Math Quiz Game!")
     print("You will be presented with math problems, and you need to provide the correct answers.")
-#range of random numbers for n1 is (1,10) and for n2 is (1,5)
+    # range of random numbers for n1 is (1,10) and for n2 is (1,5)
     for _ in range(t_q):
         n1 = function_random_number(1, 10);
         n2 = function_random_number(1, 5);
@@ -55,4 +56,3 @@ def math_quiz():
             print(f"Wrong answer. The correct answer is {ANSWER}.")
 
     print(f"\nGame over! Your score is: {s}/{t_q}")
-
